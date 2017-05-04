@@ -1,2 +1,2 @@
 # CurrencyConverter
-Rails app that converter a currency to another.
+Rails app that exchange a currency to another.
