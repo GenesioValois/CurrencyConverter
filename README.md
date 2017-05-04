@@ -1,5 +1,8 @@
 # README
 
+# CurrencyConverter
+Rails app that convert a currency to another.
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
