@@ -28,8 +28,8 @@
             <input type="text" id="result" name="result" class="form-control" placeholder="Resultado" readonly>
           </div>
         </div>
-        <div style="display:none">
-          <button type="submit" class="btn btn-primary btn-exchange col-md-12">CONVERTER</button>
+        <div class="col-xs-12">
+          <%=button_tag :CONVERTER, type: :submit, class: 'btn btn-primary btn-exchange col-md-12 invisible' %>
         </div>
       <% end %>
     </div>
