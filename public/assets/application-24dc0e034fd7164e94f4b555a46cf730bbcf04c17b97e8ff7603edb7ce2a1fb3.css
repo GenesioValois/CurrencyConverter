@@ -48,7 +48,8 @@ figure {
 
 /* line 81, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_normalize.scss */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -213,7 +214,8 @@ fieldset {
 
 /* line 336, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_normalize.scss */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -235,7 +237,8 @@ textarea {
 /* line 368, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_normalize.scss */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -303,7 +306,8 @@ template {
   blockquote::first-line,
   li::first-line {
     text-shadow: none !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
   }
 
   /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_print.scss */
@@ -382,14 +386,16 @@ template {
 }
 /* line 22, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_reboot.scss */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* line 26, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_reboot.scss */
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 @-ms-viewport {
@@ -2788,8 +2794,10 @@ pre code {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
 }
 /* line 35, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_forms.scss */
 .form-control::-ms-expand {
@@ -3205,7 +3213,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 /* line 23, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_buttons.scss */
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25);
+  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25);
+          box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25);
 }
 /* line 30, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_buttons.scss */
 .btn.disabled, .btn:disabled {
@@ -3237,7 +3246,8 @@ fieldset[disabled] a.btn {
 }
 /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+          box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
 }
 /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary.disabled, .btn-primary:disabled {
@@ -3266,7 +3276,8 @@ fieldset[disabled] a.btn {
 }
 /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-secondary:focus, .btn-secondary.focus {
-  box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+          box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
 }
 /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-secondary.disabled, .btn-secondary:disabled {
@@ -3295,7 +3306,8 @@ fieldset[disabled] a.btn {
 }
 /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-info:focus, .btn-info.focus {
-  box-shadow: 0 0 0 2px rgba(91, 192, 222, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(91, 192, 222, 0.5);
+          box-shadow: 0 0 0 2px rgba(91, 192, 222, 0.5);
 }
 /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-info.disabled, .btn-info:disabled {
@@ -3324,7 +3336,8 @@ fieldset[disabled] a.btn {
 }
 /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-success:focus, .btn-success.focus {
-  box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
+          box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
 }
 /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-success.disabled, .btn-success:disabled {
@@ -3353,7 +3366,8 @@ fieldset[disabled] a.btn {
 }
 /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-warning:focus, .btn-warning.focus {
-  box-shadow: 0 0 0 2px rgba(240, 173, 78, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(240, 173, 78, 0.5);
+          box-shadow: 0 0 0 2px rgba(240, 173, 78, 0.5);
 }
 /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-warning.disabled, .btn-warning:disabled {
@@ -3382,7 +3396,8 @@ fieldset[disabled] a.btn {
 }
 /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-danger:focus, .btn-danger.focus {
-  box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.5);
+          box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.5);
 }
 /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-danger.disabled, .btn-danger:disabled {
@@ -3412,7 +3427,8 @@ fieldset[disabled] a.btn {
 }
 /* line 61, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+          box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
 }
 /* line 66, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
@@ -3441,7 +3457,8 @@ fieldset[disabled] a.btn {
 }
 /* line 61, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-  box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+          box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
 }
 /* line 66, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
@@ -3470,7 +3487,8 @@ fieldset[disabled] a.btn {
 }
 /* line 61, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-info:focus, .btn-outline-info.focus {
-  box-shadow: 0 0 0 2px rgba(91, 192, 222, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(91, 192, 222, 0.5);
+          box-shadow: 0 0 0 2px rgba(91, 192, 222, 0.5);
 }
 /* line 66, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-info.disabled, .btn-outline-info:disabled {
@@ -3499,7 +3517,8 @@ fieldset[disabled] a.btn {
 }
 /* line 61, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-success:focus, .btn-outline-success.focus {
-  box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
+          box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
 }
 /* line 66, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-success.disabled, .btn-outline-success:disabled {
@@ -3528,7 +3547,8 @@ fieldset[disabled] a.btn {
 }
 /* line 61, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-warning:focus, .btn-outline-warning.focus {
-  box-shadow: 0 0 0 2px rgba(240, 173, 78, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(240, 173, 78, 0.5);
+          box-shadow: 0 0 0 2px rgba(240, 173, 78, 0.5);
 }
 /* line 66, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-warning.disabled, .btn-outline-warning:disabled {
@@ -3557,7 +3577,8 @@ fieldset[disabled] a.btn {
 }
 /* line 61, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-danger:focus, .btn-outline-danger.focus {
-  box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.5);
+          box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.5);
 }
 /* line 66, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-danger.disabled, .btn-outline-danger:disabled {
@@ -4200,7 +4221,8 @@ tbody.collapse.show {
 }
 /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_custom-forms.scss */
 .custom-control-input:focus ~ .custom-control-indicator {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0275d8;
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0275d8;
+          box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0275d8;
 }
 /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_custom-forms.scss */
 .custom-control-input:active ~ .custom-control-indicator {
@@ -5309,10 +5331,8 @@ tbody.collapse.show {
   /* line 266, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_card.scss */
   .card-columns {
     -webkit-column-count: 3;
-       -moz-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
   }
   /* line 270, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_card.scss */
@@ -5694,7 +5714,6 @@ a.badge:focus, a.badge:hover {
 
 /* line 24, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/_progress.scss */
 .progress-bar-striped {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
 }
@@ -7272,7 +7291,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-self-auto {
   -ms-flex-item-align: auto !important;
-      -ms-grid-row-align: auto !important;
       align-self: auto !important;
 }
 
@@ -7291,7 +7309,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-self-center {
   -ms-flex-item-align: center !important;
-      -ms-grid-row-align: center !important;
       align-self: center !important;
 }
 
@@ -7304,7 +7321,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
-      -ms-grid-row-align: stretch !important;
       align-self: stretch !important;
 }
 
@@ -7488,7 +7504,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-sm-auto {
     -ms-flex-item-align: auto !important;
-        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
 
@@ -7507,7 +7522,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-sm-center {
     -ms-flex-item-align: center !important;
-        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
 
@@ -7520,7 +7534,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-sm-stretch {
     -ms-flex-item-align: stretch !important;
-        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
 }
@@ -7704,7 +7717,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-md-auto {
     -ms-flex-item-align: auto !important;
-        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
 
@@ -7723,7 +7735,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-md-center {
     -ms-flex-item-align: center !important;
-        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
 
@@ -7736,7 +7747,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-md-stretch {
     -ms-flex-item-align: stretch !important;
-        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
 }
@@ -7920,7 +7930,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-lg-auto {
     -ms-flex-item-align: auto !important;
-        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
 
@@ -7939,7 +7948,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-lg-center {
     -ms-flex-item-align: center !important;
-        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
 
@@ -7952,7 +7960,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-lg-stretch {
     -ms-flex-item-align: stretch !important;
-        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
 }
@@ -8136,7 +8143,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-xl-auto {
     -ms-flex-item-align: auto !important;
-        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
 
@@ -8155,7 +8161,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-xl-center {
     -ms-flex-item-align: center !important;
-        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
 
@@ -8168,7 +8173,6 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0.alpha6/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-xl-stretch {
     -ms-flex-item-align: stretch !important;
-        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
 }
@@ -11130,4 +11134,8 @@ body {
   background-color: #5bc0de;
   border-color: #5bc0de;
   border-radius: 0;
+}
+/* line 23, /usr/src/app/app/assets/stylesheets/_exchange_box.scss */
+.exchange_box .switch-box {
+  margin-bottom: 1rem;
 }
